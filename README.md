@@ -1,6 +1,6 @@
 # Web Scraper with REST API
 
-This is a Python application that scrapes articles from [RBC.ru](https://www.rbc.ru) based on specified keywords, utilizes proxies for avoiding scraping bans, and provides the scraped data through a REST API.
+This is a Python application that scrapes articles from [RBC.ru](https://www.rbc.ru), a Russian news website, based on specified keywords, utilizes proxies for avoiding scraping bans, and provides the scraped data through a REST API.
 
 ## Features:
 
@@ -18,7 +18,7 @@ This is a Python application that scrapes articles from [RBC.ru](https://www.rbc
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your_username/web_scraper.git
+    git clone https://github.com/SebastianCielma/Scraper.git
     ```
 
 2. Install the required dependencies:
@@ -38,15 +38,15 @@ This is a Python application that scrapes articles from [RBC.ru](https://www.rbc
 2. Use the following endpoints for interacting with the API:
 
     - **Add Keyword**: `POST /add_keyword`
-      - This endpoint allows you to add new keywords for monitoring.
+      - This endpoint allows you to add new keywords for monitoring. Keywords should be in Russian.
       - Example:
         ```bash
-        curl -X POST http://localhost:5000/add_keyword -H "Content-Type: application/json" -d '{"keyword": "finance"}'
+        curl -X POST http://localhost:5000/add_keyword -H "Content-Type: application/json" -d '{"keyword": "финансы"}'
         ```
       - Response:
         ```json
         {
-            "message": "Keyword 'finance' added successfully."
+            "message": "Keyword 'финансы' added successfully."
         }
         ```
 
@@ -77,7 +77,9 @@ This is a Python application that scrapes articles from [RBC.ru](https://www.rbc
     - **Authentication**:
       - Basic authentication is required for accessing the endpoints. Use the username and password provided in the application.
 
+## Documentation:
 
+- For detailed documentation, including code structure, classes, and functions, refer to the code comments and docstrings in the source files.
 
 ## Testing:
 
