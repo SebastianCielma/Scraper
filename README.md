@@ -77,9 +77,6 @@ This is a Python application that scrapes articles from [RBC.ru](https://www.rbc
     - **Authentication**:
       - Basic authentication is required for accessing the endpoints. Use the username and password provided in the application.
 
-## Documentation:
-
-- For detailed documentation, including code structure, classes, and functions, refer to the code comments and docstrings in the source files.
 
 ## Testing:
 
